@@ -12,7 +12,7 @@ from train import Trainer
 
 def main():
     trainer = Trainer()
-    trainer.prepare_for_train(batch_size = 128, epoch_num = 10, val = 0.2)
+    trainer.prepare_for_train(batch_size = 128, epoch_num = 50, val = 0.2)
     trainer.fit()
     trainer.save_model("model.pkl")
     #trainer.load_model("model.pkl")
